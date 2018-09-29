@@ -79,8 +79,9 @@ header {
 }
 .expand-icon-container {
   width: 30;
-  height: 30; 
+  height: 30;
   border-radius: 15px;
+  cursor: pointer;
 }
 .expand-icon {
   color: white;
