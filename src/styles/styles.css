@@ -10,14 +10,14 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
 }
-.is-active {
-  /* color: pink;
-  font-weight: bold; */
-}
 
 ul {
   list-style: none;
   padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 .book-item {
   display: flex;
@@ -43,7 +43,7 @@ header {
   display: flex;
 }
 .main-content {
-  flex: 2.5;
+  flex: 3;
 }
 .book-title-and-edit-btn-container {
   display: flex;
@@ -57,8 +57,34 @@ header {
 }
 .sidebar-container {
   flex: 1;
-  background: red;
+  padding: 40px 0 20px 20px;
+}
+.sidebar-list-container {
+  border-radius: 5px;
+  border: 1px solid #0080ff;
+  margin-bottom: 20px;
+}
+.sidebar-list {
+  margin: 0;
+  padding: 0 10px 10px 10px;
+}
+.sidebar-list-header {
+  background: #0080ff;
   padding: 10px;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.expand-icon-container {
+  width: 30;
+  height: 30; 
+  border-radius: 15px;
+}
+.expand-icon {
+  color: white;
+  font-size: 30px;
 }
 .active-edit-mode-header {
   background: #800000;

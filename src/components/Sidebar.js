@@ -1,32 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {Link} from 'react-router-dom';
+import SidebarList from './SidebarList';
+
 
 const Sidebar = (props) =>(
    <div className="sidebar-container">
-    <h2>Categories</h2>
-    <ul>
-     {
-       props.categories.slice(0, 4).map((category)=>{
-         return (
-           <li key={category.id}>
-             <h5>{category.name}</h5>
-           </li>)
-       })
-     }
-    </ul>
-
-    <h2>Authors</h2>
-    <ul>
-     {
-       props.authors.slice(0, 4).map((author)=>{
-         return (
-           <li key={author.id}>
-             <h5>{author.name}</h5>
-           </li>)
-       })
-     }
-    </ul>
-
+    <SidebarList items={props.categories} header="Categories" itemLink="/category/"/>
+    <SidebarList items={props.authors} header="Authors" itemLink="/author/"/>
   </div>
 );
 

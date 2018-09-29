@@ -31,7 +31,9 @@ class Home extends React.Component{
                  <img src={book.image} style={{height: 250}}/>
                  <div style={{padding: 20}}>
                    <div className="book-title-and-edit-btn-container">
-                     <div style={{fontSize: 25}}><Link to={"/book/" + book.id} className="book-title">{book.title}</Link></div>
+                     <div style={{fontSize: 25}}>
+                       <Link to={"/book/" + book.id} className="book-title">{book.title}</Link>
+                     </div>
                      {
                        editMode
                        &&
