@@ -1,4 +1,72 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background: #d0d0d0;
+}
+
+*{
+  box-sizing: border-box;
+}
 .is-active {
-  color: pink;
-  font-weight: bold;
+  /* color: pink;
+  font-weight: bold; */
+}
+
+header {
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.active-edit-mode-header {
+  background: #800000;
+}
+.inactive-edit-mode-header {
+  background: #303030;
+}
+.home-title {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1.7em;
+  display: flex;
+  align-items: center;
+}
+.edit-mode-label {
+  font-size: 12px;
+  background: #FA8072;
+  padding: 3px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.btn {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-btns {
+  background: #0080FF;
+  margin-left: 10px;
+}
+
+.inactive-edit-mode-btn {
+  background: #F81894;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.active-edit-mode-btn {
+  background: #0b6623;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
 }

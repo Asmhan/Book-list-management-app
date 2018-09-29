@@ -5,17 +5,17 @@ import './styles/styles.css';
 import AppRouter from './routers/AppRouter';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
-import {editMood} from './actions/editMood';
+import {editMode} from './actions/editMode';
 const store = configureStore();
 
 store.subscribe(()=>{
   console.log(store.getState());
 })
 
-store.dispatch(editMood())
-store.dispatch(editMood())
+// store.dispatch(editMode())
+// store.dispatch(editMode())
 
-console.log(store.getState().editMood.editMood);
+// console.log(store.getState().editMode.editMode);
 const jsx = (
   <Provider store={store}>
     <AppRouter/>

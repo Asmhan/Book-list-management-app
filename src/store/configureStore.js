@@ -2,7 +2,7 @@ import { createStore, combineReducers } from 'redux';
 import booksReducer from '../reducers/books';
 import categoriesReducer from '../reducers/categories';
 import authorsReducer from '../reducers/authors';
-import editMoodReducer from '../reducers/editMood';
+import editModeReducer from '../reducers/editMode';
 
 
 export default () => {
@@ -11,7 +11,7 @@ export default () => {
       books: booksReducer,
       categories: categoriesReducer,
       authors: authorsReducer,
-      editMood: editMoodReducer
+      editMode: editModeReducer
     })
   );
 
