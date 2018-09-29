@@ -3,7 +3,7 @@ import booksReducer from '../reducers/books';
 import categoriesReducer from '../reducers/categories';
 import authorsReducer from '../reducers/authors';
 import editModeReducer from '../reducers/editMode';
-
+import paginationReducer from '../reducers/pagination';
 
 export default () => {
   const store = createStore(
@@ -11,7 +11,8 @@ export default () => {
       books: booksReducer,
       categories: categoriesReducer,
       authors: authorsReducer,
-      editMode: editModeReducer
+      editMode: editModeReducer,
+      pagination: paginationReducer
     })
   );
 

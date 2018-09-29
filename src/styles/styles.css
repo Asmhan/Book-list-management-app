@@ -8,6 +8,7 @@ body {
 
 *{
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 .is-active {
   /* color: pink;
@@ -43,6 +44,16 @@ header {
 }
 .main-content {
   flex: 2.5;
+}
+.book-title-and-edit-btn-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.book-title {
+  font-size: 22px;
+  color: black;
+  text-decoration: none;
 }
 .sidebar-container {
   flex: 1;
@@ -108,8 +119,54 @@ header {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 .edit-icon {
   color: white;
   font-size: 13px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px;
+}
+
+.pagination-item {
+  border: 1px solid #dedede;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.pagination-next-item {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.pagination-previous-item {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #0080ff;
+}
+.link-class {
+  color: #0080ff;
+  text-decoration: none;
+}
+.active-page {
+  background: #0080FF;
+  color: white;
+  border: 1px solid #0080FF;
+}
+.active-page-link {
+  text-decoration: none;
+  color: white
+}
+
+.link-class-prev {
+  color: #0080ff;
+}
+
+.link-class-next {
+  color: #0080ff;
 }
