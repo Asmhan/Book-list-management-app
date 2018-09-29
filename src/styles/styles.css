@@ -14,6 +14,19 @@ body {
   font-weight: bold; */
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+.book-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin: 10px 30px;
+}
+.book-item:last-child {
+  border: none;
+}
 header {
   padding: 10px 40px;
   display: flex;
@@ -21,6 +34,21 @@ header {
   justify-content: space-between;
 }
 
+.container {
+  background: white;
+  width: 85%;
+  margin: 0 auto;
+  min-height: 600px;
+  display: flex;
+}
+.main-content {
+  flex: 2.5;
+}
+.sidebar-container {
+  flex: 1;
+  background: red;
+  padding: 10px;
+}
 .active-edit-mode-header {
   background: #800000;
 }
@@ -69,4 +97,19 @@ header {
   border: none;
   cursor: pointer;
   margin-left: 20px;
+}
+
+.edit-btn {
+  display: flex;
+  align-items: center;
+  background: #73C2FB;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.edit-icon {
+  color: white;
+  font-size: 13px;
 }
