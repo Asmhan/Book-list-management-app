@@ -5,6 +5,9 @@ import NotFoundPage from '../components/NotFoundPage';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import Author from '../components/Author';
+import AddAuthor from '../components/AddAuthor';
+import { connect } from 'react-redux';
+
 
 const AppRouter = (props)=> (
   <BrowserRouter>
@@ -15,7 +18,8 @@ const AppRouter = (props)=> (
         <div className="main-content">
           <Switch>
            <Route path="/" component={Home} exact={true}/>
-           <Route path="/author/:authorId" component={Author} exact={true}/>
+           <Route path="/author/new" component={props.editMode ? AddAuthor : NotFoundPage} exact={true}/>
+           <Route path="/author/:authorId" component={Author}/>
            <Route component={NotFoundPage}/>
           </Switch>
         </div>
@@ -23,5 +27,10 @@ const AppRouter = (props)=> (
     </div>
   </BrowserRouter>
 )
+const mapStateToProps = (state) => {
+  return {
+    editMode: state.editMode.editMode,
+  };
+};
 
-export default AppRouter;
+export default connect(mapStateToProps)(AppRouter);
