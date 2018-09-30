@@ -4,7 +4,7 @@ import categoriesReducer from '../reducers/categories';
 import authorsReducer from '../reducers/authors';
 import editModeReducer from '../reducers/editMode';
 import paginationReducer from '../reducers/pagination';
-
+import searchReducer from '../reducers/search';
 export default () => {
   const store = createStore(
     combineReducers({
@@ -12,7 +12,8 @@ export default () => {
       categories: categoriesReducer,
       authors: authorsReducer,
       editMode: editModeReducer,
-      pagination: paginationReducer
+      pagination: paginationReducer,
+      search: searchReducer
     })
   );
 

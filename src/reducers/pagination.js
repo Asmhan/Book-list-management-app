@@ -1,4 +1,4 @@
-// Filters Reducer
+//Pagination Filters Reducer
 
 const paginationsReducerDefaultState = {
   pageNumber: 0,

@@ -7,6 +7,8 @@ import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 const store = configureStore();
 
+import {setSearchText} from './actions/search';
+
 store.subscribe(()=>{
   console.log(store.getState());
 })
