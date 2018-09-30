@@ -19,7 +19,7 @@ const AppRouter = (props)=> (
           <Switch>
            <Route path="/" component={Home} exact={true}/>
            <Route path="/author/new" component={props.editMode ? AddAuthor : NotFoundPage} exact={true}/>
-           <Route path="/author/:authorId" component={Author}/>
+           <Route path="/author/:authorId" component={Author} exact={true}/>
            <Route component={NotFoundPage}/>
           </Switch>
         </div>

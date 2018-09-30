@@ -19,7 +19,7 @@ class Author extends React.Component {
         <div className="author-personal-data-container">
           <div style={{display: 'flex', alignItems: 'center'}}>
             <h2>{author.name}</h2>
-            <EditBtn forwardLink={"/author/" + author.id + "/book/"} editMode={editMode}/>
+            <EditBtn forwardLink={"/author/" + author.id + "/edit/"} editMode={editMode}/>
           </div>
           <h5>{'-'+author.jobTitle}</h5>
           <p>{author.bio}</p>
