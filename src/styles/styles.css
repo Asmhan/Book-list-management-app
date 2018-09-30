@@ -227,7 +227,8 @@ header {
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  color: white
+  color: white;
+  cursor: pointer;
 }
 
 .form-cancel-btn {
@@ -238,4 +239,5 @@ header {
   padding: 10px 20px;
   border-radius: 5px;
   color: black;
+  cursor: pointer;
 }
