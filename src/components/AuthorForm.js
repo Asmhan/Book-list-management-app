@@ -4,9 +4,9 @@ export default class AuthorForm extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-      name: '',
-      jobTitle: '',
-      bio: '',
+      name:  props.author ? props.author.name : '',
+      jobTitle: props.author ? props.author.jobTitle : '',
+      bio: props.author ? props.author.bio : '',
     }
   }
   onSubmit = (e) => {
@@ -63,8 +63,8 @@ export default class AuthorForm extends React.Component {
           >
           </textarea>
          <div style={{display: 'flex'}}>
-           <button type="submit" style={{width: 100, background: '#0080ff', border: 'none', padding: '10px 20px', borderRadius: 5, color: 'white'}}>Save</button>
-           <div onClick={()=>alert('cancel')} style={{marginLeft: 10, width: 100, background: 'white', border: '1px solid #a5a5a5', padding: '10px 20px', borderRadius: 5, color: 'black'}} >Cancel</div>
+           <button type="submit" className="form-save-btn" >Save</button>
+           <div onClick={this.props.onCancel} className="form-cancel-btn" >Cancel</div>
          </div>
         </form>
       </div>

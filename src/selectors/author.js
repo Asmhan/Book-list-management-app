@@ -1,5 +1,5 @@
 export const getAuthor = (authors, id) => {
-  return authors.filter((author)=>{
+  return authors.find((author)=>{
     return author.id === id
-  })[0]
+  })
 }

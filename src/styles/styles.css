@@ -220,3 +220,22 @@ header {
 .author-personal-data-container {
   padding: 20px 50px 0 50px;
 }
+
+.form-save-btn {
+  width: 100px;
+  background: #0080ff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white
+}
+
+.form-cancel-btn {
+  margin-left: 10px;
+  width: 100px;
+  background: white;
+  border: 1px solid #a5a5a5;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+}

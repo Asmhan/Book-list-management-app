@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import Author from '../components/Author';
 import AddAuthor from '../components/AddAuthor';
+import EditAuthor from '../components/EditAuthor';
 import { connect } from 'react-redux';
 
 
@@ -20,6 +21,7 @@ const AppRouter = (props)=> (
            <Route path="/" component={Home} exact={true}/>
            <Route path="/author/new" component={props.editMode ? AddAuthor : NotFoundPage} exact={true}/>
            <Route path="/author/:authorId" component={Author} exact={true}/>
+           <Route path="/author/:authorId/edit" component={EditAuthor}/>
            <Route component={NotFoundPage}/>
           </Switch>
         </div>
