@@ -41,6 +41,7 @@ input:hover, textarea:hover {
   align-items: center;
   border-bottom: 1px solid black;
   margin: 10px 30px;
+  padding: 10px 0;
 }
 .book-item:last-child {
   border: none;
