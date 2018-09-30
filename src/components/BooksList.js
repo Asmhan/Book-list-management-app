@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
+import EditBtn from './EditBtn';
 export default class BooksList extends React.Component {
   render(){
     const {books, editMode} = this.props;
@@ -16,13 +16,7 @@ export default class BooksList extends React.Component {
                    <div style={{fontSize: 25}}>
                      <Link to={"/book/" + book.id} className="book-title">{book.title}</Link>
                    </div>
-                   {
-                     editMode
-                     &&
-                     <Link to={"/book/" + book.id + "/edit"} className="edit-btn">
-                       <i class="material-icons edit-icon">create</i>Edit
-                     </Link>
-                   }
+                   <EditBtn forwardLink={"/book/" + book.id + "/edit"} editMode={editMode}/>
                    </div>
                    <p>{book.description}</p>
                </div>

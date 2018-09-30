@@ -4,7 +4,7 @@ import Home from '../components/Home';
 import NotFoundPage from '../components/NotFoundPage';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
-
+import Author from '../components/Author';
 
 const AppRouter = (props)=> (
   <BrowserRouter>
@@ -15,6 +15,7 @@ const AppRouter = (props)=> (
         <div className="main-content">
           <Switch>
            <Route path="/" component={Home} exact={true}/>
+           <Route path="/author/:authorId" component={Author} exact={true}/>
            <Route component={NotFoundPage}/>
           </Switch>
         </div>

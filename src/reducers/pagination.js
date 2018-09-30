@@ -1,8 +1,8 @@
 // Filters Reducer
 
 const paginationsReducerDefaultState = {
-  pageNumber: 1,
-  itemsCountPerPage: 5
+  pageNumber: 0,
+  itemsCountPerPage: 6
 };
 
 export default (state = paginationsReducerDefaultState, action) => {

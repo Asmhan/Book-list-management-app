@@ -18,9 +18,9 @@ export default class SidebarList extends React.Component {
           {header}
           <div onClick={()=>this.setState({expandList: !expandList})} className="expand-icon-container">
             { expandList ?
-              <i class="material-icons expand-icon">arrow_drop_up</i>
+              <i className="material-icons expand-icon">arrow_drop_up</i>
               :
-              <i class="material-icons expand-icon">arrow_drop_down</i>
+              <i className="material-icons expand-icon">arrow_drop_down</i>
             }
           </div>
         </div>
@@ -30,8 +30,8 @@ export default class SidebarList extends React.Component {
            {
              items.map((item)=>{
                return (
-                 <Link to={itemLink + item.id}>
-                   <li key={item.id}>
+                 <Link key={item.id} to={itemLink + item.id}>
+                   <li>
                      <h5>{item.name}</h5>
                    </li>
                  </Link>
